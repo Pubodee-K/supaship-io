@@ -131,7 +131,7 @@ begin
       posts.id = $1;
 end;$$;
 
-create function create_new_post("userId" uuid, "title" text, "content" text)
+create function create_new_post("user_id" uuid, "title" text, "content" text)
 returns boolean
 language plpgsql
 as $$
