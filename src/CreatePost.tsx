@@ -17,9 +17,9 @@ function createNewPost({
   content: string;
 }) {
   return supaClient.rpc("create_new_post", {
-    userId: session?.user.id || "",
-    title,
-    content,
+  user_id: session?.user?.id || "",
+  title,
+  content,
   });
 }
 
